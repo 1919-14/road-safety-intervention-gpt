@@ -400,7 +400,7 @@ python main.py
 **V S S K Sai Narayana**
 - B.Tech AIML, 2nd Year
 - Indore Institute of Science & Technology
-- Role: Lead Developer, Fine-tuning, Vector RAG
+- Role: Team Leader, Developer, Fine-tuning, Vector RAG
 
 **Sujeet Sahni**
 - B.Tech AIML, 2nd Year  
