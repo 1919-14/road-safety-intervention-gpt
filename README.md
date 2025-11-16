@@ -336,22 +336,11 @@ python graph_retrieval.py
 python main.py
 ```
 
-### **Example Queries**
+### **Example Queries and Response**
 
-1. **Regulation Queries:**
-   - "What does the STOP sign indicate according to IRC:67-2022?"
-   - "What are the regulations for damaged road signs?"
-   - "Explain IRC:35-2015 clause for road markings"
-
-2. **Problem-Specific Queries:**
-   - "How should damaged road signs be reported?"
-   - "What is the proper height for speed limit signs?"
-   - "What are the visibility requirements for road signs?"
-
-3. **Type-Specific Queries:**
-   - "Tell me about STOP sign specifications"
-   - "What are the rules for speed bumps?"
-   - "Hospital sign placement guidelines"
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9176d818-9d5d-4759-9578-51d90b990361" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/863d8b69-8c6c-4d51-a74a-639acb03eeb4" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6a5e5b05-b408-4480-9a59-768069280379" />
 
 ---
 
