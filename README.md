@@ -124,6 +124,8 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 ```
 
 <img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/3b985470-a3fb-43fa-a98c-69d0d2dc77d1" />
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/dfb837e4-6888-4954-9164-e144740964a7" />
+
 
 
 ### Component Details
@@ -234,6 +236,9 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 - `neo4j_schema.txt` - Graph schema definition
 
 ---
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/4487bd8e-196f-4a1b-9557-4fac310dc2bd" />
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/ef41b887-5f40-498b-b701-53a65f9b7c51" />
+
 
 ## ⚙️ Installation
 
