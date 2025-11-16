@@ -130,8 +130,11 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 ---
 
 ### **1. Fine-Tuning Only**
+**Pros**
 - Single-model inference with no retrieval layer  
 - Fastest generation due to no database operations  
+
+**Cons**
 - Requires a large labeled dataset (typically thousands of samples)  
 - Knowledge becomes static after training; updates require retraining  
 - Limited to patterns learned during training  
@@ -140,8 +143,11 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 ---
 
 ### **2. RAG Only (Vector Retrieval)**
+**Pros**
 - Simple to integrate and maintain  
-- Uses semantic similarity for flexible retrieval  
+- Uses semantic similarity for flexible retrieval
+
+**Cons**
 - Does not understand relationships or hierarchy  
 - Cannot enforce exact clause/code structured queries  
 - Retrieval accuracy depends solely on text similarity  
@@ -151,9 +157,12 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 ---
 
 ### **3. Graph RAG Only**
+**Pros**
 - Excellent for relationship-aware queries  
 - Strong for clause–entity linkage and structured datasets  
 - Provides deterministic graph-based reasoning  
+
+**Cons**
 - Limited semantic flexibility (exact-term matching dominates)  
 - Requires graph modeling, schema design, and Cypher queries  
 - Cannot handle descriptive or natural-language variations well  
