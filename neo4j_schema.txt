@@ -1,0 +1,117 @@
+"""
+Road Safety Infrastructure Neo4j Schema
+Based on actual CSV data structure
+"""
+
+# Node Labels
+NODE_LABELS:
+  - InfrastructureIssue
+  - ProblemType
+  - Category
+  - AssetType
+  - Regulation
+  - Clause
+
+# Node Properties
+InfrastructureIssue:
+  s_no: integer
+  problem: string
+  category: string
+  type: string
+  data: string (long description)
+  code: string (regulation code)
+  clause: string
+
+ProblemType:
+  name: string
+
+Category:
+  name: string
+
+AssetType:
+  name: string
+
+Regulation:
+  code: string
+
+Clause:
+  number: string
+
+# Relationships
+RELATIONSHIPS:
+  - IS_PROBLEM_TYPE: InfrastructureIssue → ProblemType
+  - IS_CATEGORY: InfrastructureIssue → Category
+  - ASSET_OF_TYPE: InfrastructureIssue → AssetType
+  - GOVERNED_BY: InfrastructureIssue → Regulation
+  - REFERENCES_CLAUSE: Regulation → Clause
+
+# Example Data Values (from actual CSV)
+PROBLEM_VALUES:
+  - "Damaged"
+  - "Faded"
+  - "Missing"
+  - "Height Issue"
+  - "Spacing Issue"
+  - "Improper Placement"
+  - "Obstruction"
+  - "Non-Retroreflective"
+  - "Non-Standard"
+  - "Wrongly Placed"
+  - "Visibility Issue"
+  - "Placement Issue"
+  - "Wrong Colour Selection"
+
+CATEGORY_VALUES:
+  - "Road Sign"
+  - "Road Marking"
+  - "Traffic Calming Measures"
+
+TYPE_VALUES:
+  - "STOP Sign"
+  - "Speed Bump"
+  - "Hospital Sign"
+  - "U-Turn Ahead Sign"
+  - "Gap in Median Sign"
+  - "Crash Prone Area Ahead Sign"
+  - "Minimum Speed Limit Sign"
+  - "Maximum Speed Limit Sign"
+  - "Pedestrian Crossing Sign"
+
+REGULATION_CODES:
+  - "IRC:67-2022"
+  - "IRC:35-2015"
+  - "IRC:99-2018"
+  - "IRC:SP:84-2019"
+
+# Example Cypher Queries
+
+# 1. Find all STOP Sign issues
+MATCH (i:InfrastructureIssue)
+WHERE i.type = 'STOP Sign'
+RETURN i.s_no, i.problem, i.category, i.type, i.code
+
+# 2. Find Damaged road signs
+MATCH (i:InfrastructureIssue)
+WHERE i.problem = 'Damaged' AND i.category = 'Road Sign'
+RETURN i.type, i.problem, i.code, i.clause
+
+# 3. Find issues by regulation code
+MATCH (i:InfrastructureIssue)
+WHERE i.code = 'IRC:67-2022'
+RETURN DISTINCT i.type, i.problem
+
+# 4. Count problems by type
+MATCH (i:InfrastructureIssue)
+RETURN i.problem, count(i) AS count
+ORDER BY count DESC
+
+# 5. Find all regulations
+MATCH (i:InfrastructureIssue)
+RETURN DISTINCT i.code
+
+# Query Rules:
+# - Use exact node names (case-sensitive)
+# - Use exact property names (lowercase)
+# - Use exact values (case-sensitive)
+# - Always use WHERE for filtering
+# - Always include RETURN clause
