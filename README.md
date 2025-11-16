@@ -123,6 +123,9 @@ This architecture ensures **90-100% accuracy** on the hackathon dataset with **z
 └─────────────────────────────────────────────┘
 ```
 
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/3b985470-a3fb-43fa-a98c-69d0d2dc77d1" />
+
+
 ### Component Details
 
 #### **1. Frontend (index.html + frontend-integration.js)**
