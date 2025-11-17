@@ -553,7 +553,7 @@ python main.py
 
 ### **Demo Video**
 
-[![Video Title](https://youtu.be/Bcw2hSQ6t3w?si=GRF5b5i1n69pnCzL)
+https://youtu.be/Bcw2hSQ6t3w?si=GRF5b5i1n69pnCzL
 
 ---
 ## 🔬 How It Works
