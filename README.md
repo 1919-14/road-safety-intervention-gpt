@@ -202,6 +202,7 @@ ollama run VSSKSN/Llama_RSIGPT
 ```
 
 ### **Knowledge Graph**
+
 <img width="1920" height="1080" alt="Screenshot_2025-11-17_19_38_30" src="https://github.com/user-attachments/assets/537a4c67-53f0-4b05-911c-4544e0663b69" />
 
 
